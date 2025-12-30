@@ -1,0 +1,36 @@
+/* Navbar Component Styles */
+.custom-navbar {
+  position: relative !important;
+  z-index: 1050 !important;
+  background-color: #3b5d50 !important;
+}
+
+.navbar-brand {
+  z-index: 1051 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand span {
+  color: #f9bf29;
+}
+
+.custom-navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar-nav .nav-link:hover {
+  color: #f9bf29 !important;
+}
+
+.custom-navbar-nav .nav-item.active .nav-link {
+  color: #f9bf29 !important;
+}
+
+.custom-navbar-cta .nav-link img {
+  width: 20px;
+  height: 20px;
+}

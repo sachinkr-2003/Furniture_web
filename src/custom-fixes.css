@@ -1,0 +1,123 @@
+/* Custom fixes for navbar and layout issues */
+
+/* Navbar fixes */
+.custom-navbar {
+  position: relative !important;
+  z-index: 1050 !important;
+  background-color: #3b5d50 !important;
+}
+
+.navbar-brand {
+  z-index: 1051 !important;
+}
+
+/* Hero section adjustments */
+.hero {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-img-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-img-wrap img {
+  position: relative;
+  z-index: 1;
+}
+
+/* Product section fixes */
+.product-section {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  padding-top: 80px;
+}
+
+/* Why choose us section */
+.why-choose-section {
+  position: relative;
+  z-index: 2;
+  background-color: #f8f9fa;
+}
+
+/* We help section */
+.we-help-section {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+/* Popular product section */
+.popular-product {
+  position: relative;
+  z-index: 2;
+  background-color: #f8f9fa;
+}
+
+/* Testimonial section */
+.testimonial-section {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+/* Blog section */
+.blog-section {
+  position: relative;
+  z-index: 2;
+  background-color: #f8f9fa;
+}
+
+/* Footer */
+.footer-section {
+  position: relative;
+  z-index: 2;
+  background-color: #3b5d50;
+}
+
+/* General layout fixes */
+.container {
+  position: relative;
+  z-index: 10;
+}
+
+/* Image positioning fixes */
+img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* Prevent any floating elements from overlapping navbar */
+.hero .hero-img-wrap img,
+.product-section img,
+.why-choose-section img {
+  position: relative;
+  z-index: 1;
+}
+
+/* Auto-moving yellow dots animation */
+@keyframes moveDots {
+  0% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(20px) translateY(-10px); }
+  50% { transform: translateX(-15px) translateY(15px); }
+  75% { transform: translateX(10px) translateY(-20px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('/src/images/dots-yellow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 20%;
+  right: 10%;
+  animation: moveDots 8s ease-in-out infinite;
+  z-index: 0;
+}

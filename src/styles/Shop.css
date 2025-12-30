@@ -1,0 +1,62 @@
+/* Shop Page Styles */
+.shop-page {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.shop-page .section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 2rem;
+}
+
+.shop-product-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.shop-product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shop-product-item img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.shop-product-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 0.5rem;
+}
+
+.shop-product-item .text-primary {
+  color: #3b5d50 !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.shop-product-item .btn-primary {
+  background-color: #3b5d50;
+  border-color: #3b5d50;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.shop-product-item .btn-primary:hover {
+  background-color: #f9bf29;
+  border-color: #f9bf29;
+  color: #000;
+}
